@@ -97,9 +97,9 @@ public class DatePickerDialog extends DialogFragment implements
     private static final int ANIMATION_DURATION = 300;
     private static final int ANIMATION_DELAY = 500;
 
-    private Locale locale = new Locale("th", "TH");
-    private static SimpleDateFormat YEAR_FORMAT = new SimpleDateFormat("yyyy", Locale.getDefault());
-    private static SimpleDateFormat DAY_FORMAT = new SimpleDateFormat("dd", Locale.getDefault());
+    private static Locale locale = new Locale("th", "TH");
+    private static SimpleDateFormat YEAR_FORMAT = new SimpleDateFormat("yyyy", locale);
+    private static SimpleDateFormat DAY_FORMAT = new SimpleDateFormat("dd", locale);
 
 
     private final Calendar mCalendar = trimToMidnight(Calendar.getInstance());
@@ -475,10 +475,10 @@ public class DatePickerDialog extends DialogFragment implements
 
     private void updateDisplay(boolean announce) {
         if (mDayOfWeekView != null) {
-            if(mTitle != null) mDayOfWeekView.setText(mTitle.toUpperCase(Locale.getDefault()));
+            if(mTitle != null) mDayOfWeekView.setText(mTitle.toUpperCase(locale));
             else {
                 mDayOfWeekView.setText(mCalendar.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.LONG,
-                        Locale.getDefault()).toUpperCase(Locale.getDefault()));
+                        locale).toUpperCase(locale));
             }
         }
 
