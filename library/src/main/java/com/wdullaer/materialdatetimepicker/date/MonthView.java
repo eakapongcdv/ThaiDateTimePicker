@@ -449,16 +449,16 @@ public abstract class MonthView extends View {
 
     @NonNull
     private String getMonthAndYearString() {
-        Locale locale = Locale.getDefault();
-        String pattern = "MMMM yyyy";
+        /** thai calender edit */
+        Locale locale = new Locale("th", "TH");
+        String pattern = "MMMM";
 
-        if(Build.VERSION.SDK_INT < 18) pattern = getContext().getResources().getString(R.string.mdtp_date_v1_monthyear);
-        else pattern = DateFormat.getBestDateTimePattern(locale, pattern);
+        if(Build.VERSION.SDK_INT > 17) pattern = DateFormat.getBestDateTimePattern(locale, pattern);
 
         SimpleDateFormat formatter = new SimpleDateFormat(pattern, locale);
         formatter.applyLocalizedPattern(pattern);
         mStringBuilder.setLength(0);
-        return formatter.format(mCalendar.getTime());
+        return formatter.format(mCalendar.getTime())+ " "+getContext().getString(R.string.mdtp_buddhist)+" "+ (mCalendar.get(Calendar.YEAR)+543);  // Thai calendar edit
     }
 
     protected void drawMonthTitle(Canvas canvas) {
