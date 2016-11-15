@@ -1,4 +1,4 @@
-# Material DateTime Picker - Select a time/date in style
+# Material DateTime Picker - Select a time/date in style [Thai Buddhist calendar Edition]
 
 [![Join the chat at https://gitter.im/wdullaer/MaterialDateTimePicker](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/wdullaer/MaterialDateTimePicker?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ![Maven Central](https://img.shields.io/maven-central/v/com.wdullaer/materialdatetimepicker.svg)
@@ -14,7 +14,7 @@ Feel free to fork or issue pull requests on github. Issues can be reported on th
 
 Date Picker | Time Picker
 ---- | ----
-![Date Picker](https://raw.github.com/wdullaer/MaterialDateTimePicker/gh-pages/images/date_picker.png) | ![Time Picker](https://raw.github.com/wdullaer/MaterialDateTimePicker/gh-pages/images/time_picker.png)
+![Date Picker](https://github.com/layerlre/MaterialDateTimePicker-Thai/raw/master/resources/Date.png) | ![Time Picker](https://github.com/layerlre/MaterialDateTimePicker-Thai/raw/master/resources/Time.png)
 
 
 ## Table of Contents
