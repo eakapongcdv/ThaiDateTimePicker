@@ -1,6 +1,6 @@
 # Material DateTime Picker - Select a time/date in style [Forked for Thai Buddhist calendar Edition]
 
-![Maven Central](https://img.shields.io/maven-central/v/com.layer-net/thaidatetimepicker.svg)
+[ ![Download](https://api.bintray.com/packages/layerlre/maven/ThaiDateTimePicker/images/download.svg) ](https://bintray.com/layerlre/maven/ThaiDateTimePicker/_latestVersion)
 
 Material DateTime Picker tries to offer you the date and time pickers as shown in [the Material Design spec](http://www.google.com/design/spec/components/pickers.html), with an
 easy themable API.
@@ -12,7 +12,7 @@ Feel free to fork or issue pull requests on github. Issues can be reported on th
 
 Date Picker | Time Picker
 ---- | ----
-![Date Picker](https://github.com/layerlre/MaterialDateTimePicker-Thai/raw/master/resources/Date.png) | ![Time Picker](https://github.com/layerlre/MaterialDateTimePicker-Thai/raw/master/resources/Time.png)
+![Date Picker](https://github.com/layerlre/ThaiDateTimePicker/raw/master/resources/Date.png) | ![Time Picker](https://github.com/layerlre/ThaiDateTimePicker/raw/master/resources/Time.png)
 
 
 ## Table of Contents
@@ -28,6 +28,13 @@ Date Picker | Time Picker
 
 
 ## Setup
+The easiest way to add the Material DateTime Picker (Thai Edition) library to your project is by adding it as a dependency to your `build.gradle`
+```java
+dependencies {
+  compile 'com.layer-net:thai-datetimepicker:1.0.3'
+}
+```
+
 You may also add the library as an Android Library to your project. All the library files live in ```library```.
 
 
