@@ -96,6 +96,7 @@ public class DatePickerDialog extends DialogFragment implements
 
     private static final int ANIMATION_DURATION = 300;
     private static final int ANIMATION_DELAY = 500;
+    private static final int BUDDHIST_OFFSET = 543;
 
     private static Locale locale = new Locale("th", "TH");
     private static SimpleDateFormat YEAR_FORMAT = new SimpleDateFormat("yyyy", locale);
@@ -486,7 +487,7 @@ public class DatePickerDialog extends DialogFragment implements
         mSelectedDayTextView.setText(DAY_FORMAT.format(mCalendar.getTime()));
 
         /** thai calender edit */
-        int Year = mCalendar.get(Calendar.YEAR) +543;
+        int Year = mCalendar.get(Calendar.YEAR) +BUDDHIST_OFFSET;
         mYearView.setText(String.valueOf(Year));
         /** end thai calendar edit */
 

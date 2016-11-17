@@ -37,7 +37,7 @@ import com.wdullaer.materialdatetimepicker.date.DatePickerDialog.OnDateChangedLi
  */
 public class YearPickerView extends ListView implements OnItemClickListener, OnDateChangedListener {
     private static final String TAG = "YearPickerView";
-
+    private static final int BUDDHIST_OFFSET = 543;
     private final DatePickerController mController;
     private YearAdapter mAdapter;
     private int mViewSize;
@@ -88,7 +88,7 @@ public class YearPickerView extends ListView implements OnItemClickListener, OnD
     }
 
     private static int getYearFromTextView(TextView view) {
-        return Integer.valueOf(view.getText().toString())-543;  //  Thai calendar edit
+        return Integer.valueOf(view.getText().toString())-BUDDHIST_OFFSET;  //  Thai calendar edit
     }
 
     private final class YearAdapter extends BaseAdapter {
@@ -128,7 +128,7 @@ public class YearPickerView extends ListView implements OnItemClickListener, OnD
                   .inflate(R.layout.mdtp_year_label_text_view, parent, false);
                 v.setAccentColor(mController.getAccentColor(), mController.isThemeDark());
             }
-            int year = mMinYear + position + 543;  //  Thai calendar edit
+            int year = mMinYear + position + BUDDHIST_OFFSET;  //  Thai calendar edit
             boolean selected = mController.getSelectedDay().year == year;
             v.setText(String.valueOf(year));
             v.drawIndicator(selected);

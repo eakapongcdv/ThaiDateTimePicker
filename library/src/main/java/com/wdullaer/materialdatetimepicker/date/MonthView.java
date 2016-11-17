@@ -108,6 +108,7 @@ public abstract class MonthView extends View {
     protected static final int DEFAULT_FOCUS_MONTH = -1;
     protected static final int DEFAULT_NUM_ROWS = 6;
     protected static final int MAX_NUM_ROWS = 6;
+    protected static final int BUDDHIST_OFFSET = 543;
 
     private static final int SELECTED_CIRCLE_ALPHA = 255;
 
@@ -458,7 +459,7 @@ public abstract class MonthView extends View {
         SimpleDateFormat formatter = new SimpleDateFormat(pattern, locale);
         formatter.applyLocalizedPattern(pattern);
         mStringBuilder.setLength(0);
-        return formatter.format(mCalendar.getTime()) + " " + getContext().getString(R.string.mdtp_buddhist) + " " + (mCalendar.get(Calendar.YEAR) + 543);  // Thai calendar edit
+        return formatter.format(mCalendar.getTime()) + " " + getContext().getString(R.string.mdtp_buddhist) + " " + (mCalendar.get(Calendar.YEAR) + BUDDHIST_OFFSET);  // Thai calendar edit
     }
 
     protected void drawMonthTitle(Canvas canvas) {
