@@ -14,7 +14,7 @@ ext {
     siteUrl = 'https://github.com/eakapongcdv/ThaiDateTimePicker'
     gitUrl = 'https://github.com/eakapongcdv/ThaiDateTimePicker.git'
 
-    libraryVersion = '2.5.0'
+    libraryVersion = '2.4.0'
 
     developerId = 'eakapongcdv'
     developerName = 'Eakapong Kattiya'
@@ -26,7 +26,7 @@ ext {
 }
 
 group = 'com.github.eakapongcdv'
-version = '2.5.0'
+version = '2.4.0'
 
 android {
     compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
