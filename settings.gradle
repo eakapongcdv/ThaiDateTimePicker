@@ -1,1 +1,2 @@
 include ':thai-datetimepicker', ':sample'
+rootProject.name = 'ThaiDateTimePicker'

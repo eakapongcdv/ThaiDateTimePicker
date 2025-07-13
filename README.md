@@ -12,7 +12,7 @@ Feel free to fork or issue pull requests on github. Issues can be reported on th
 
 Date Picker | Time Picker
 ---- | ----
-![Date Picker](https://github.com/layerlre/ThaiDateTimePicker/raw/master/resources/Date.png) | ![Time Picker](https://github.com/layerlre/ThaiDateTimePicker/raw/master/resources/Time.png)
+![Date Picker](https://github.com/eakapongcdv/ThaiDateTimePicker/raw/master/resources/Date.png) | ![Time Picker](https://github.com/eakapongcdv/ThaiDateTimePicker/raw/master/resources/Time.png)
 
 
 ## Table of Contents
